@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry | Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="./style.css">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.mindiv" 
+    class = "logo">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos">
+    
+
+        <button id="tema-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </header>
+<body>
+    
+
+    <section class="hero">
+
+        <div
+        class="hero-text"
+        data-aos="fade-up">
+            <p class="small-text">Olá, eu sou</p>
+
+            <h1>Thierry Kauãn</h1>
+
+            <h2>Desenvolvedor Front-End</h2>
+
+            <p>
+                Transformando ideias em experiências digitais
+                modernas, responsivas e intuitivas.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="# Ver Projetos"></a>
+                <a href="#contato" classto></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section
+    id="sobre"
+    class="section"
+    data-aos="fade-right">
+
+        <h2>Sobre Mim</h2>
+
+        <p>
+            Sou estudante de desenvolvimento web focado em
+            HTML, CSS e JavaScript. Estou constantemente
+            aprendendo novas tecnologias e construindo
+            projetos para evoluir minha capacidade de criar
+            interfaces modernas e funcionais.
+        </p>
+    </section>
+
+    <section id="projetos" class="section">
+
+        <h2>Projetos</h2>
+
+        <div class="cards">
+
+            <article class="card" data-aos="zoom-in">
+                <i class="fa-solid fa-calculator"></i>
+                <h3>Calculadora</h3>
+                <p>
+                    Operações matemáticas com JavaScript.
+                </p>
+            </article>
+
+            <article class="card" data-aos="zoom-in" data-aos-delay="150">
+                <i class="fa-solid fa-list-check"></i>
+                <h3>To-Do List</h3>
+                <p>
+                    Lista de tarefas dinâmica.
+                </p>
+            </article>
+
+            <article class="card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Relógio Digital</h3>
+                <p>
+                    Manipulação de datas e horário.
+                </p>
+            </article>  
+        </div>
+
+    </section>
+
+    <section id="contato" class="section">
+
+        <h2>Contato</h2>
+        <form id="formulario" data-aos="fade-up">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" rows="6" required></textarea>
+            <button type="submit"> Enviar Mensagem </button>
+        </form>
+        <p id="mensagem"></p>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#">
+            <i class="fab fa-github"></i>
+            </a>
+        
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">am"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 Thierry Kauãn</p>
+
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.jsscript"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+</body>
+</html>
