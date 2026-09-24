@@ -286,5 +286,87 @@ form button:hover::before {
 left: 100%;
 }
 
+#typing::after {
+content: "|";
+animation: blink .8s infinite;
+color: var(--primary);
+}
+@keyframes blink {
+50% {
+opacity: 0;
+}
+}
 
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 25px;
+margin-top: 50px;
+}
+.skill {
+background: var(--card);
+border-radius: 20px;
+padding: 30px;
+text-align: center;
+transition: .4s;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+.skill:hover {
+transform: translateY(-10px);
+box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+.skill i {
+font-size: 4rem;
+margin-bottom: 15px;
+}
+.skill::before {
+content: "";
+position: absolute;
+top: -100%;
+left: -100%;
+width: 250%;
+height: 250%;
+background:
+linear-gradient(45deg,transparent,rgba(255,255,255,.08),transparent);
+transform: rotate(25deg);
+transition: .8s;
+}
+.skill:hover::before {
+left: 100%;
+}
+.skill i {
+animation: floatIcon 3s ease-in-out infinite;
 
+}
+@keyframes floatIcon {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-10px);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+.fa-html5 {
+color: #e34f26;
+}
+.fa-css3-alt {
+color: #1572b6;
+}
+.fa-js {
+color: #f7df1e;
+}
+.fa-git-alt {
+color: #f05032;
+}
+.fa-github {
+color: #ffffff;
+}
+.fa-react {
+color: #61dafb;
+}
